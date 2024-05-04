@@ -36,6 +36,7 @@ jobs:
           retention-days: 3
       - name: Deploy to Render
         uses: sws2apps/render-deployment@v1.6.0
+        if: ${{ github.event_name == 'push' }}
         with:
           serviceId: srv-coqtk3q1hbls73etafk0
           apiKey: ${{ secrets.RENDER_API_KEY }}
