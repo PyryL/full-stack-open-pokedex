@@ -46,7 +46,7 @@ jobs:
         with:
           severity: info
           text: A new version of Pokedex deployed
-          description: \[https://full-stack-open-pokedex-drx2.onrender.com/\](https://full-stack-open-pokedex-drx2.onrender.com/)
+          description: Available at [https://full-stack-open-pokedex-drx2.onrender.com/](https://full-stack-open-pokedex-drx2.onrender.com/)
           webhookUrl: ${{ secrets.DISCORD_WEBHOOK }}
       - name: Notify failed CI
         uses: rjstone/discord-webhook-notify@v1
